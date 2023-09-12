@@ -17,23 +17,23 @@ pub fn get_html(url: &str) -> Result<String, curl::Error> {
     Ok(html)
 }
 
-struct Comment{
+struct Comment {
     op: String,
     content: String,
 }
 
-struct Post{
+struct Post {
     url: String,
     title: String,
     content: String,
     comments: Comment,
 }
 impl Post {
-    fn get_comments(&self){
+    fn get_comments(&self) {
         !todo!("get comments")
     }
 
-    fn get_title(&self){
+    fn get_title(&self) {
         !todo!("get title")
     }
 
@@ -41,4 +41,3 @@ impl Post {
         !todo!("get content")
     }
 }
-
